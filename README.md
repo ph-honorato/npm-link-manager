@@ -26,4 +26,31 @@ que dependem de `npm link` para funcionar corretamente.
 
 ## Status
 
-🚧 Em desenvolvimento — MVP funcional (V1).
+✅ Finalizado — MVP funcional (V1).
+
+---
+
+# Local Link Orchestrator
+
+Local web tool (no installation, no server required) for automating development environment setup in projects with multiple artifacts/repositories that depend on `npm link` to work properly.
+
+## How It Works
+
+1. Register the artifacts (nodes) in your environment, providing their names and local paths
+2. Build the dependency tree between them
+3. Generate a `.bat` script with all commands in the correct order
+4. Run the script to configure the environment automatically
+
+## How to Use
+
+1. Clone this repository
+2. Open the `index.html` file directly in your browser (Chrome)
+3. Register the root node and the other artifacts
+4. Build the dependency tree
+5. Click **"Generate Script (.bat)"** and run the downloaded file
+
+> ⚠️ **Warning**: depending on your machine's security settings, you may not be able to run the `.bat` file directly by double-clicking it. In this case, open **Command Prompt (CMD)**, navigate to the folder where the file was downloaded, and run it manually by entering the file name (e.g., `setup-links.bat`).
+
+## Status
+
+✅ Completed — Functional MVP (V1).
